@@ -1,44 +1,37 @@
-# E-commerce Admin Application
+# E-commerce Store
 
-This is a full-stack **E-commerce Admin Dashboard** that allows users to create and manage multiple stores and products. Admins can monitor sales, manage store settings, and handle products efficiently. The application is built with modern technologies and features a clean UI for seamless interactions.
+This is a user-friendly **E-commerce Store** built to allow users to explore various product categories, add items to the cart, and make secure purchases using Stripe for payment processing. The store features a smooth and modern UI, along with state management to ensure a seamless shopping experience.
 
 ## Features
 
-- **Create and manage multiple stores**: Admins can create multiple stores and switch between them.
-- **Product management**: Add, update, and delete products within stores.
-- **Sales monitoring**: View and monitor sales data for each store.
-- **Store management**: Update store details and manage store operations.
-- **Authentication**: Secure login using Clerk for user authentication.
-- **Payment integration**: Stripe integration for handling payments.
+- **Explore Categories**: Users can browse products by different categories.
+- **Add to Cart**: Seamless shopping experience with add-to-cart functionality.
+- **Checkout**: Complete purchases securely with Stripe payment integration.
+- **Product Listings**: Display detailed product information for users to make informed decisions.
 
 ## Tech Stack
 
+- **TypeScript**: Strongly typed programming language that builds on JavaScript.
 - **Next.js**: React framework for server-side rendering and full-stack development.
-- **Prisma ORM**: Database ORM for PostgreSQL, used to manage data and relationships.
-- **Zustand**: A small, fast state management library to handle the application state.
-- **ShadCn**: A UI component library for a modern, responsive design.
-- **Tailwind CSS**: Utility-first CSS framework for styling the application.
-- **Clerk**: Authentication and user management.
-- **Stripe**: Payment processing integration for managing transactions.
-- **PostgreSQL**: Relational database for storing store and product data.
+- **Tailwind CSS**: Utility-first CSS framework for fast and responsive UI design.
+- **Zustand**: State management library to handle the application's global state.
+- **Stripe**: Payment gateway integration to handle transactions securely.
 
 ## Getting Started
 
 ### Prerequisites
 
-Before running the project, make sure you have the following installed:
+Before running the project, ensure that you have the following installed:
 
 - **Node.js** (v16 or higher)
-- **PostgreSQL** (latest version)
-- **Stripe account** for payment integration
-- **Clerk account** for authentication setup
+- **Stripe account** for payment processing
 
 ### Installation
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/ecommerce-admin.git
-   cd ecommerce-admin
+   git clone https://github.com/RohithAchar/e-commerce-store.git
+   cd e-commerce-store
    ```
 
 2. **Install dependencies**:
@@ -48,28 +41,13 @@ Before running the project, make sure you have the following installed:
 
 3. **Set up environment variables**:
 
-   Create a `.env` file in the root directory and add the following variables:
+   Create a `.env` file in the root directory and add your environment variables:
 
    ```bash
-   STRIPE_WEBHOOK_SECRET=your_webhook_secret
-   FRONTEND_STORE_URL=your_frontend_store_url
-   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
-   CLERK_SECRET_KEY=your_clerk_secret_key
-   DATABASE_URL=your_database_url
-   NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
-   STRIPE_API_KEY=your_stripe_key
+   NEXT_PUBLIC_API_URL=your_dashboard_app_url
    ```
 
-4. **Set up Prisma**:
-
-   Generate the Prisma client and migrate the database:
-
-   ```bash
-   npx prisma migrate dev
-   npx prisma generate
-   ```
-
-5. **Run the development server**:
+4. **Run the development server**:
 
    ```bash
    npm run dev
@@ -79,25 +57,23 @@ Before running the project, make sure you have the following installed:
 
 ## Usage
 
-- **Stores**: Admins can create new stores, switch between existing stores, and manage store settings.
-- **Products**: Add, update, or remove products from the selected store.
-- **Sales Dashboard**: View sales performance for each store.
-- **Authentication**: Users must log in using Clerk to access the dashboard.
-- **Payments**: Payments for the products are handled via Stripe integration.
+- **Browse Categories**: Explore products from different categories.
+- **Add to Cart**: Select products to add to the shopping cart.
+- **Checkout**: Use Stripe to process payments and complete purchases.
 
 ## Deployment
 
-You can deploy this project on platforms like Vercel, Netlify, or any other hosting service that supports Next.js.
+You can deploy this project on platforms like Vercel or Netlify.
 
 ### Deploy on Vercel
 
 1. Connect your repository to Vercel.
-2. Set up the environment variables on Vercel (same as in your `.env` file).
-3. Deploy the project with one click.
+2. Add the environment variables on Vercel (same as in your `.env` file).
+3. Deploy the project with ease.
 
 ## Contributing
 
-Feel free to contribute by submitting a pull request, creating issues, or providing feedback. All contributions are welcome!
+Contributions are welcome! If you'd like to contribute, please submit a pull request or raise an issue.
 
 ## License
 
